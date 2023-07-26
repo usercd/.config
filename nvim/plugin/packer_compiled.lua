@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/home/cd/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://ghproxy.com/https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/home/cd/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://ghproxy.com/https://github.com/github/copilot.vim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/cd/.local/share/nvim/site/pack/packer/start/friendly-snippets",

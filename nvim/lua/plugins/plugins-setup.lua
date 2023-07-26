@@ -41,6 +41,7 @@ return require('packer').startup(function(use)
   }
   use { mirror .. "christoomey/vim-tmux-navigator" }-- 用ctl-hjkl来定位窗口
   use {mirror ..  "nvim-treesitter/nvim-treesitter"} -- 语法高亮
+
   use {mirror .. "p00f/nvim-ts-rainbow"}-- 配合treesitter，不同括号颜色区分
   use {
   mirror ..   "williamboman/mason.nvim",
@@ -65,6 +66,9 @@ return require('packer').startup(function(use)
     mirror .. 'nvim-telescope/telescope.nvim', tag = '0.1.1',  -- 文件检索
     requires = { {mirror ..  'nvim-lua/plenary.nvim'} }
   }
+    use {mirror .. "github/copilot.vim"}
+
+
 
   if packer_bootstrap then
     require('packer').sync()
