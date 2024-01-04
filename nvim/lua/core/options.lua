@@ -1,7 +1,7 @@
 local opt = vim.opt
 
 -- 行号
-opt.relativenumber = false
+opt.relativenumber = true
 opt.number = true
 
 -- 缩进
@@ -12,6 +12,9 @@ opt.autoindent = true
 
 -- 防止包裹
 opt.wrap = false
+
+-- 启用鼠标
+opt.mouse:append("a")
 
 -- 系统剪贴板
 opt.clipboard:append("unnamedplus")
@@ -28,6 +31,6 @@ opt.smartcase = true
 opt.termguicolors = true
 opt.signcolumn = "yes"
 
-vim.cmd[[colorscheme tokyonight-moon]]
-vim.g.copilot_assume_mapped = true
+-- vim.cmd[[colorscheme tokyonight-moon]]
+-- vim.g.copilot_assume_mapped = true
 

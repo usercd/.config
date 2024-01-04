@@ -22,13 +22,13 @@ vim.cmd([[
   augroup end
 ]])
 
-local mirror = "https://ghproxy.com/https://github.com/"
+local mirror = "https://mirror.ghproxy.com/https://github.com/"
 
 return require('packer').startup(function(use)
 --   use 'wbthomason/packer.nvim'
   use { mirror .. 'wbthomason/packer.nvim'}
- -- use { mirror ..  'folke/tokyonight.nvim' }-- 主题
-  use { 'folke/tokyonight.nvim' }
+  use { mirror ..  'folke/tokyonight.nvim' }-- 主题
+ -- use { 'folke/tokyonight.nvim' }
   use {
   mirror ..  'nvim-lualine/lualine.nvim',  -- 状态栏
     requires = {mirror ..  'kyazdani42/nvim-web-devicons', opt = true }  -- 状态栏图标
